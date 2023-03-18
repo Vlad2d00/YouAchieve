@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/buttonNews"
+        android:title="@string/news"
+        android:icon="@drawable/news"/>
+    <item
+        android:id="@+id/buttonMessenger"
+        android:title="@string/messenger"
+        android:icon="@drawable/messenger"/>
+    <item
+        android:id="@+id/buttonTasks"
+        android:title="@string/tasks"
+        android:icon="@drawable/tasks"/>
+    <item
+        android:id="@+id/buttonProjects"
+        android:title="@string/projects"
+        android:icon="@drawable/projects"/>
+    <item
+        android:id="@+id/buttonUser"
+        android:title="@string/user"
+        android:icon="@drawable/user"/>
+</menu>

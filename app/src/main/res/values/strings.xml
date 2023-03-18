@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">YouAchieve</string>
+
+    <!-- Навигация -->
+    <string name="news">Новости</string>
+    <string name="messenger">Мессенджер</string>
+    <string name="tasks">Задачи</string>
+    <string name="projects">Проекты</string>
+    <string name="user">Аккаунт</string>
+
+    <!-- Пост -->
+    <string name="text_news_user">Имя Фамилия</string>
+    <string name="text_news_time">дата и время</string>
+    <string name="text_news_type">Тип поста</string>
+    <string name="text_news_content">Текст поста.</string>
+    <string name="text_news_like">100</string>
+    <string name="text_news_comment">10</string>
+    <string name="text_news_view">1000</string>
+
+    <!-- Вторая страница (для прикола) -->
+    <string name="button_goto_website">Великий и неповторимый</string>
+    <string name="button_goto_main">Назад</string>
+
+    <!-- Тест -->
+    <string name="text_test">Тестовый текст</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

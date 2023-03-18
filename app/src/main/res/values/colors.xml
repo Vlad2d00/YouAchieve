@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#F3F0F0</color>
+
+    <color name="primary">#FF435B</color>
+    <color name="primary_variant">#FF7B4A</color>
+    <color name="secondary">#FF435B</color>
+    <color name="secondary_variant">#FF7B4A</color>
+
+    <!-- Основное -->
+    <color name="card">#FFFFFF</color>
+    <color name="background">#EFF0F3</color>
+    <color name="shadow">#CFD1D3</color>
+    <color name="border">#989898</color>
+
+    <!-- Типы постов -->
+    <color name="type_post_custom">#4B4F53</color>
+    <color name="type_post_achievement">#5BC139</color>
+    <color name="type_post_system">#3676DF</color>
+
+    <!-- Текст, кнопки -->
+    <color name="text_primary">#000000</color>
+    <color name="text_secondary">#818181</color>
+    <color name="text_button">#FFFFFFFF</color>
+
+</resources>

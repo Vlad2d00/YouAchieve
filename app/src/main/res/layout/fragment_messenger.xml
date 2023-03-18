@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    tools:context=".MessengerFragment">
+
+    <Button
+        android:id="@+id/buttonNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/news"
+        android:textSize="@dimen/text_small"
+        android:layout_weight="1">
+    </Button>
+
+    <Button
+        android:id="@+id/buttonMessages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/messenger"
+        android:textSize="@dimen/text_tiny"
+        android:backgroundTint="@color/black"
+        android:layout_weight="1">
+    </Button>
+
+    <Button
+        android:id="@+id/buttonTasks"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tasks"
+        android:textSize="@dimen/text_small"
+        android:layout_weight="1">
+    </Button>
+
+</LinearLayout>
