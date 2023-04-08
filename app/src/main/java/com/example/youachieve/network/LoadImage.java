@@ -13,11 +13,10 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class LoadImage extends AsyncTask<String, Integer, Void> {
+public class LoadImage extends AsyncTask<String, Integer, Bitmap> {
     private final String requestUrl_;
     @SuppressLint("StaticFieldLeak")
     private final ImageView imageView_;
-    private Bitmap bitmap_;
 
     public LoadImage(String requestUrl, ImageView imageView) {
         super();
@@ -28,18 +27,20 @@ public class LoadImage extends AsyncTask<String, Integer, Void> {
     @Override
     protected void onPreExecute() {
         super.onPreExecute();
+        // Выставляем картинку загрузки
         imageView_.setImageResource(R.drawable.loading);
     }
 
     @Override
-    protected Void doInBackground(String... params) {
+    protected Bitmap doInBackground(String... params) {
         URL url;
         HttpURLConnection urlConnection = null;
+        Bitmap bitmap = null;
 
         try {
             url = new URL(requestUrl_);
             urlConnection = (HttpURLConnection) url.openConnection();
-            bitmap_ = BitmapFactory.decodeStream(urlConnection.getInputStream());
+            bitmap = BitmapFactory.decodeStream(urlConnection.getInputStream());
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -48,11 +49,11 @@ public class LoadImage extends AsyncTask<String, Integer, Void> {
             if (urlConnection != null)
                 urlConnection.disconnect();
         }
-        return null;
+        return bitmap;
     }
 
     @Override
-    protected void onPostExecute(Void oVoid) {
-        imageView_.setImageBitmap(bitmap_);
+    protected void onPostExecute(Bitmap bitmap) {
+        imageView_.setImageBitmap(bitmap);
     }
 }

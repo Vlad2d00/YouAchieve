@@ -6,7 +6,9 @@ import android.os.AsyncTask;
 import android.util.Log;
 import android.widget.TextView;
 
+import com.example.youachieve.PostAdapter;
 import com.example.youachieve.data.DataBase;
+import com.example.youachieve.data.MyConfig;
 import com.example.youachieve.data.Post;
 import com.example.youachieve.data.TypePost;
 import com.example.youachieve.data.User;
@@ -24,20 +26,16 @@ import java.util.Date;
 
 
 public class LoadPosts extends AsyncTask<String, Integer, Void> {
-    private final String requestUrl_ = "https://youachieve.eu.pythonanywhere.com/posts/";
-    @SuppressLint("StaticFieldLeak")
-    private final TextView textView_;
+    PostAdapter postAdapter_;
 
-    public LoadPosts(TextView textView) {
+    public LoadPosts(PostAdapter postAdapter) {
         super();
-        this.textView_ = textView;
+        postAdapter_ = postAdapter;
     }
 
     @Override
     protected void onPreExecute() {
-        super.onPreExecute();
-        Log.d("YouAchieve", "AsyncLoadData onPreExecute() called");
-        textView_.setText("Загрузка...");
+        Log.d("YouAchieve", "LoadPosts onPreExecute() called");
     }
 
     @Override
@@ -46,7 +44,7 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
         HttpURLConnection urlConnection = null;
 
         try {
-            url = new URL(requestUrl_);
+            url = new URL(MyConfig.URL_GET_POSTS);
             urlConnection = (HttpURLConnection) url.openConnection();
 //            urlConnection.setDoOutput(true);
 //            urlConnection.setDoInput(true);
@@ -64,9 +62,7 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
                 in.close();
                 String response = result.toString();
 
-                Log.d("YouAchieve", "================================");
-                Log.d("YouAchieve", response);
-                Log.d("YouAchieve", "================================");
+                Log.d("YouAchieve", "LoadPosts response " + response);
 
                 JSONObject jsonObject = new JSONObject(response);
                 JSONArray jsonArrayPost = jsonObject.getJSONArray("items");
@@ -86,12 +82,8 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
 
                     User user = new User(first_name, last_name);
                     if (jsonUser.has("image_name")) {
-                        String image_name = jsonUser.getString("image_name");
-                        user.setImageName(image_name);
-                        Log.d("YouAchieve", "image_name = " + image_name);
+                        user.setImageName(jsonUser.getString("image_name"));
                     }
-                    else
-                        Log.d("YouAchieve", "image_name = none");
 
                     Date date = new Date(year, month, day, hour, minute, second);
                     Post post = new Post(user, text, date, TypePost.valueOf(0));
@@ -99,9 +91,7 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
                 }
             }
             else {
-                Log.d("YouAchieve", "================================");
-                Log.d("YouAchieve", "ERROR: code " + String.valueOf(code));
-                Log.d("YouAchieve", "================================");
+                Log.d("YouAchieve", "ERROR: LoadPosts (code " + String.valueOf(code) + ')');
             }
         }
         catch (Exception e) {
@@ -114,9 +104,10 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
         return null;
     }
 
+    @SuppressLint("NotifyDataSetChanged")
     @Override
     protected void onPostExecute(Void oVoid) {
-        Log.d("YouAchieve", "AsyncLoadData onPostExecute() called");
-        textView_.setText("Готово!");
+        Log.d("YouAchieve", "LoadPosts onPostExecute() called");
+        postAdapter_.loadMorePosts();
     }
 }

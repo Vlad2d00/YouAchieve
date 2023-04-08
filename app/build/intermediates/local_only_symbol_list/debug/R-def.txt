@@ -136,7 +136,6 @@ id userFragment
 layout activity_detail
 layout activity_main
 layout activity_post_detail
-layout activity_post_detail2
 layout fragment_messenger
 layout fragment_news
 layout fragment_post_detail

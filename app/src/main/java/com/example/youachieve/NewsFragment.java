@@ -17,14 +17,12 @@ import android.view.ViewGroup;
 
 import com.example.youachieve.data.DataBase;
 import com.example.youachieve.data.MyConfig;
+import com.example.youachieve.network.LoadPosts;
 
 public class NewsFragment extends Fragment {
-    RecyclerView recyclerView;
-    PostAdapter postsAdapter;
-    boolean isLoading = false;
+    private RecyclerView recyclerView_;
+    private PostAdapter postAdapter_;
 
-
-    public NewsFragment() {}
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -38,13 +36,17 @@ public class NewsFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_news, container, false);
         Log.w("YouAchieve", "NewsFragment onCreateView() called");
 
-        recyclerView = view.findViewById(R.id.postList);
-        recyclerView.setHasFixedSize(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        postsAdapter = new PostAdapter(DataBase.postList, getParentFragmentManager().beginTransaction());
-        recyclerView.setAdapter(postsAdapter);
+        recyclerView_ = view.findViewById(R.id.postList);
+        recyclerView_.setHasFixedSize(false);
+        recyclerView_.setLayoutManager(new LinearLayoutManager(view.getContext()));
+        postAdapter_ = new PostAdapter(DataBase.postList, getParentFragmentManager().beginTransaction());
+        recyclerView_.setAdapter(postAdapter_);
 
         initScrollListener();
+
+        DataBase.postList.clear();
+        new LoadPosts(postAdapter_).execute();
+
         return view;
     }
 
@@ -55,7 +57,7 @@ public class NewsFragment extends Fragment {
     }
 
     private void initScrollListener() {
-        recyclerView.addOnScrollListener(new RecyclerView.OnScrollListener() {
+        recyclerView_.addOnScrollListener(new RecyclerView.OnScrollListener() {
              @Override
              public void onScrollStateChanged(@NonNull RecyclerView recyclerView, int newState) {
                  super.onScrollStateChanged(recyclerView, newState);
@@ -65,36 +67,18 @@ public class NewsFragment extends Fragment {
                  super.onScrolled(recyclerView, dx, dy);
 
                  LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-                 if (!isLoading) {
+                 if (!postAdapter_.isLoading()) {
+                     // Если долистали до конца списка, то загрузим следующие его элементы
                      if (linearLayoutManager != null && linearLayoutManager.
                              findLastCompletelyVisibleItemPosition() == DataBase.postList.size() - 1)
                      {
-                         // Пока не будем генерировать новые посты
+                         // Пока не будем загружать новые посты
                          // loadMorePosts();
-                         isLoading = true;
+                         new LoadPosts(postAdapter_).execute();
                      }
                  }
              }
         });
     }
 
-    private void loadMorePosts() {
-        DataBase.postList.add(DataBase.generatePost());
-        postsAdapter.notifyItemInserted(DataBase.postList.size() - 1);
-
-        Handler handler = new Handler();
-        handler.postDelayed(new Runnable() {
-            @SuppressLint("NotifyDataSetChanged")
-            @Override
-            public void run() {
-                DataBase.postList.remove(DataBase.postList.size() - 1);
-                int scrollPosition = DataBase.postList.size();
-                postsAdapter.notifyItemRemoved(scrollPosition);
-
-                DataBase.loadPosts(MyConfig.COUNT_LOAD_POSTS);
-                postsAdapter.notifyDataSetChanged();
-                isLoading = false;
-            }
-        }, 500);
-    }
 }

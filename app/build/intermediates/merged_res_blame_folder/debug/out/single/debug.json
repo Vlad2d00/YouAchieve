@@ -8,12 +8,12 @@
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\underline.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_list_item_comment.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\list_item_comment.xml"
-    },
-    {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_loading.png.flat",
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\loading.png"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_list_item_comment.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\list_item_comment.xml"
     },
     {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_news.png.flat",
@@ -34,10 +34,6 @@
     {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_gradient_basic.xml.flat",
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\gradient_basic.xml"
-    },
-    {
-        "merged": "com.example.youachieve.app-merged_res-40:/layout_activity_post_detail2.xml.flat",
-        "source": "com.example.youachieve.app-main-42:/layout/activity_post_detail2.xml"
     },
     {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_image_5.jpg.flat",
@@ -138,6 +134,10 @@
     {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_fragment_messenger.xml.flat",
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\fragment_messenger.xml"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_activity_post_detail2.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\activity_post_detail2.xml"
     },
     {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_avatar_mukola.jpg.flat",

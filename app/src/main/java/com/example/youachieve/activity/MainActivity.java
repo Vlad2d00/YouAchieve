@@ -26,13 +26,13 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
-    BottomNavigationView bottomNavigationView;
-    NewsFragment newsFragment =             new NewsFragment();
-    MessengerFragment messengerFragment =   new MessengerFragment();
-    TasksFragment tasksFragment =           new TasksFragment();
-    ProjectsFragment projectsFragment =     new ProjectsFragment();
-    UserFragment userFragment =             new UserFragment();
-    PostDetailFragment postDetailFragment;
+    private final NewsFragment newsFragment =             new NewsFragment();
+    private final MessengerFragment messengerFragment =   new MessengerFragment();
+    private final TasksFragment tasksFragment =           new TasksFragment();
+    private final ProjectsFragment projectsFragment =     new ProjectsFragment();
+    private final UserFragment userFragment =             new UserFragment();
+
+    private static final int idStartFragment = R.id.buttonNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,24 +40,18 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Log.w("YouAchieve", "MainActivity onCreate() called");
         setContentView(R.layout.activity_main);
 
-        if (!DataBase.isInit()) {
-            DataBase.initData();
-            // Не будем генерировать посты
-            // DataBase.loadPosts(MyConfig.COUNT_LOAD_POSTS);
-        }
-        // postDetailFragment = new PostDetailFragment(DataBase.postList.get(0));
+        BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
+        bottomNavigationView.setOnNavigationItemSelectedListener(this);
+        bottomNavigationView.setSelectedItemId(idStartFragment);
 
-        this.bottomNavigationView = findViewById(R.id.navigationView);
-        this.bottomNavigationView.setOnNavigationItemSelectedListener(this);
-        this.bottomNavigationView.setSelectedItemId(R.id.buttonTasks);
-
-        setListenerButtons();
-
-        DataBase.postList.clear();
-        new LoadPosts(
-                findViewById(R.id.headerText)
-        ).execute();
-
+        ImageButton buttonGotoDetail = (ImageButton) findViewById(R.id.buttonSettings);
+        buttonGotoDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), DetailActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -90,18 +84,6 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Log.w("YouAchieve", "MainActivity onDestroy() called");
     }
 
-    private void setListenerButtons() {
-        // Настройки
-        ImageButton buttonGotoDetail = (ImageButton) findViewById(R.id.buttonSettings);
-        buttonGotoDetail.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(view.getContext(), DetailActivity.class);
-                startActivity(intent);
-            }
-        });
-    }
-
     private void replaceContent(Fragment fragment, int idResHeaderText) {
         getSupportFragmentManager().beginTransaction().replace(R.id.contentFragment, fragment).commit();
         TextView menuTitle = (TextView)findViewById(R.id.headerText);
@@ -129,7 +111,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 return true;
 
             case R.id.buttonUser:
-                replaceContent(postDetailFragment, R.string.user);
+                replaceContent(userFragment, R.string.user);
                 return true;
         }
         return false;

@@ -12,6 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.youachieve.data.MyConfig;
 import com.example.youachieve.data.MyDate;
 import com.example.youachieve.data.Post;
 import com.example.youachieve.data.TypePost;
@@ -22,7 +23,6 @@ import java.util.ArrayList;
 public class PostDetailAdapter extends RecyclerView.Adapter<PostDetailAdapter.PostDetailViewHolder> {
     private final ArrayList<Post> postList;
     private RecyclerView.RecycledViewPool viewPool = new RecyclerView.RecycledViewPool();
-    private final String imageUrl_ = "https://youachieve.eu.pythonanywhere.com/image/";
 
     public PostDetailAdapter(ArrayList<Post> postList) {
         this.postList = postList;
@@ -65,12 +65,15 @@ public class PostDetailAdapter extends RecyclerView.Adapter<PostDetailAdapter.Po
         holder.postCommentCount.setText(String.valueOf(post.getCommentList().size()));
         holder.postViewCount.setText(String.valueOf(post.getViewCount()));
 
+        // Если было загружено имя изоражения, то загрузить его и установить
         if (post.getUser().getImageName().length() > 0) {
-            new LoadImage(imageUrl_ + post.getUser().getImageName(), holder.postAvatar).execute();
-            new LoadImage(imageUrl_ + post.getUser().getImageName(), holder.postImage).execute();
+            new LoadImage(MyConfig.URL_GET_IMAGE + post.getUser().getImageName(), holder.postAvatar).execute();
+            new LoadImage(MyConfig.URL_GET_IMAGE + post.getUser().getImageName(), holder.postImage).execute();
         }
-        else
+        else {
             holder.postAvatar.setImageResource(R.drawable.avatar_default);
+            holder.postImage.setImageResource(R.drawable.avatar_default);
+        }
 
         RecyclerView recyclerView = holder.commentList.findViewById(R.id.commentList);
         recyclerView.setHasFixedSize(false);

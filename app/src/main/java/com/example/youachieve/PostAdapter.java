@@ -3,6 +3,7 @@ package com.example.youachieve;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -18,17 +19,28 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.youachieve.activity.DetailActivity;
 import com.example.youachieve.activity.PostDetailActivity;
 import com.example.youachieve.data.DataBase;
+import com.example.youachieve.data.MyConfig;
 import com.example.youachieve.data.MyDate;
 import com.example.youachieve.data.Post;
 import com.example.youachieve.data.TypePost;
+import com.example.youachieve.data.User;
 import com.example.youachieve.network.LoadImage;
 
 import java.util.ArrayList;
+import java.util.Date;
 
-class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
+public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
     private final ArrayList<Post> postList;
     private final FragmentTransaction transaction;
-    private final String imageUrl_ = "https://youachieve.eu.pythonanywhere.com/image/";
+    boolean isLoading = false;
+
+    public boolean isLoading() {
+        return isLoading;
+    }
+
+    public void setLoading(boolean loading) {
+        isLoading = loading;
+    }
 
     public PostAdapter(ArrayList<Post> postList, FragmentTransaction transaction) {
         this.postList = postList;
@@ -77,7 +89,7 @@ class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
         holder.postViewCount.setText(String.valueOf(post.getViewCount()));
 
         if (post.getUser().getImageName().length() > 0)
-            new LoadImage(imageUrl_ + post.getUser().getImageName(), holder.postAvatar).execute();
+            new LoadImage(MyConfig.URL_GET_IMAGE + post.getUser().getImageName(), holder.postAvatar).execute();
         else
             holder.postAvatar.setImageResource(R.drawable.avatar_default);
 
@@ -93,16 +105,15 @@ class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
                 else if (event.getAction() == MotionEvent.ACTION_UP) {
                     holder.itemView.setBackgroundResource(R.drawable.post_background);
 
+                    // Переход на страницу с детализацией поста
                     DataBase.selectedPost = post;
                     Context context = holder.itemView.getContext();
                     Intent intent = new Intent(context, DetailActivity.class);
                     context.startActivity(intent);
 
 //                    PostDetailFragment newFragment=new PostDetailFragment(post);
-////                    transaction.add(R.id.contentFragment, newFragment);
 //                    transaction.replace(R.id.contentFragment, newFragment);
 //                    transaction.commit();
-
                 }
                 else if (event.getAction() == MotionEvent.ACTION_CANCEL) {
                     holder.itemView.setBackgroundResource(R.drawable.post_background);
@@ -139,5 +150,26 @@ class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder> {
             this.postImage = itemView.findViewById(R.id.postImage);
 
         }
+    }
+
+    public void loadMorePosts() {
+        isLoading = true;
+        //DataBase.postList.add(new Post(new User("", ""), "", new Date(), TypePost.NONE));
+        //notifyItemInserted(DataBase.postList.size() - 1);
+
+        Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            public void run() {
+                //DataBase.postList.remove(DataBase.postList.size() - 1);
+                int scrollPosition = DataBase.postList.size();
+                notifyItemRemoved(scrollPosition);
+
+                //DataBase.loadPosts(MyConfig.COUNT_LOAD_POSTS);
+                notifyDataSetChanged();
+                isLoading = false;
+            }
+        }, 500);
     }
 }

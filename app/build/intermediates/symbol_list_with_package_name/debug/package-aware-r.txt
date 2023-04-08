@@ -3272,7 +3272,6 @@ layout abc_tooltip
 layout activity_detail
 layout activity_main
 layout activity_post_detail
-layout activity_post_detail2
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
