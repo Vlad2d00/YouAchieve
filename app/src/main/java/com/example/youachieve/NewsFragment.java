@@ -72,8 +72,7 @@ public class NewsFragment extends Fragment {
                      if (linearLayoutManager != null && linearLayoutManager.
                              findLastCompletelyVisibleItemPosition() == DataBase.postList.size() - 1)
                      {
-                         // Пока не будем загружать новые посты
-                         // loadMorePosts();
+                         // Загрузим новые посты
                          new LoadPosts(postAdapter_).execute();
                      }
                  }

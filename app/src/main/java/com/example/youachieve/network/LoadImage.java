@@ -20,8 +20,8 @@ public class LoadImage extends AsyncTask<String, Integer, Bitmap> {
 
     public LoadImage(String requestUrl, ImageView imageView) {
         super();
-        this.requestUrl_ = requestUrl;
-        this.imageView_ = imageView;
+        requestUrl_ = requestUrl;
+        imageView_ = imageView;
     }
 
     @Override

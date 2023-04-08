@@ -1,10 +1,7 @@
 package com.example.youachieve.network;
 import android.annotation.SuppressLint;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.util.Log;
-import android.widget.TextView;
 
 import com.example.youachieve.PostAdapter;
 import com.example.youachieve.data.DataBase;
@@ -108,6 +105,6 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
     @Override
     protected void onPostExecute(Void oVoid) {
         Log.d("YouAchieve", "LoadPosts onPostExecute() called");
-        postAdapter_.loadMorePosts();
+        postAdapter_.updatePosts();
     }
 }

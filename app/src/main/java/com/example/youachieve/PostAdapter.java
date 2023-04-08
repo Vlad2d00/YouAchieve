@@ -88,8 +88,11 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.postCommentCount.setText(String.valueOf(post.getCommentList().size()));
         holder.postViewCount.setText(String.valueOf(post.getViewCount()));
 
-        if (post.getUser().getImageName().length() > 0)
-            new LoadImage(MyConfig.URL_GET_IMAGE + post.getUser().getImageName(), holder.postAvatar).execute();
+        // Загрузка изображения
+        if (post.getUser().getImageName().length() > 0) {
+            new LoadImage(MyConfig.URL_GET_IMAGE + post.getUser().getImageName(),
+                    holder.postAvatar).execute();
+        }
         else
             holder.postAvatar.setImageResource(R.drawable.avatar_default);
 
@@ -152,7 +155,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         }
     }
 
-    public void loadMorePosts() {
+    public void updatePosts() {
         isLoading = true;
         //DataBase.postList.add(new Post(new User("", ""), "", new Date(), TypePost.NONE));
         //notifyItemInserted(DataBase.postList.size() - 1);
@@ -163,10 +166,9 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
             @Override
             public void run() {
                 //DataBase.postList.remove(DataBase.postList.size() - 1);
-                int scrollPosition = DataBase.postList.size();
-                notifyItemRemoved(scrollPosition);
+                //int scrollPosition = DataBase.postList.size();
+                //notifyItemRemoved(scrollPosition);
 
-                //DataBase.loadPosts(MyConfig.COUNT_LOAD_POSTS);
                 notifyDataSetChanged();
                 isLoading = false;
             }
