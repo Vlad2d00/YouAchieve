@@ -9,6 +9,7 @@
         android:targetSdkVersion="32" />
 
     <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -24,10 +25,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.YouAchieve" >
         <activity
-            android:name="com.example.youachieve.DetailActivity"
+            android:name="com.example.youachieve.PostDetailActivity"
+            android:exported="false"
+            android:label="@string/title_activity_post_detail"
+            android:theme="@style/Theme.YouAchieve.NoActionBar" />
+        <activity
+            android:name="com.example.youachieve.activity.DetailActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.youachieve.MainActivity"
+            android:name="com.example.youachieve.activity.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

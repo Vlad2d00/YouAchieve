@@ -8,6 +8,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.youachieve.R;
+
 public class ProjectsFragment extends Fragment {
     public ProjectsFragment() {
         // Required empty public constructor

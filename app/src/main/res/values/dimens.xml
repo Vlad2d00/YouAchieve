@@ -21,5 +21,6 @@
     <dimen name="avatar_normal">42dp</dimen>
     <dimen name="avatar_small">32dp</dimen>
     <dimen name="icon_normal">20dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

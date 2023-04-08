@@ -48,7 +48,7 @@
 
         <!-- Дата и время -->
         <TextView
-            android:id="@+id/postDate"
+            android:id="@+id/commentDate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/text_news_time"

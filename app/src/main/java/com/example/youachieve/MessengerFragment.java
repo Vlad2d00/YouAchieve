@@ -1,6 +1,5 @@
 package com.example.youachieve;
 
-import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -9,6 +8,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.youachieve.network.LoadImage;
 
 public class MessengerFragment extends Fragment {
     public MessengerFragment() {
@@ -19,7 +20,14 @@ public class MessengerFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         Log.w("YouAchieve", "MessengerFragment onCreateView() called");
-        return inflater.inflate(R.layout.fragment_messenger, container, false);
+        View view = inflater.inflate(R.layout.fragment_messenger, container, false);
+
+        new LoadImage(
+                "https://mobimg.b-cdn.net/v3/fetch/b6/b67444cbf58152bc6e666615cb08f0f5.jpeg",
+                view.findViewById(R.id.messengerImage)
+        ).execute();
+
+        return view;
     }
 
     @Override

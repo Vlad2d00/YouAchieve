@@ -11,6 +11,9 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.youachieve.data.Comment;
+import com.example.youachieve.data.MyDate;
+
 import java.util.ArrayList;
 
 class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentViewHolder> {
@@ -66,7 +69,7 @@ class CommentAdapter extends RecyclerView.Adapter<CommentAdapter.CommentViewHold
             super(itemView);
             this.commentUserFullName = itemView.findViewById(R.id.commentUserFullName);
             this.commentText = itemView.findViewById(R.id.commentText);
-            this.commentUserFullName = itemView.findViewById(R.id.commentUserFullName);
+            this.commentDate = itemView.findViewById(R.id.commentDate);
             this.commentAvatar = itemView.findViewById(R.id.commentAvatar);
         }
     }

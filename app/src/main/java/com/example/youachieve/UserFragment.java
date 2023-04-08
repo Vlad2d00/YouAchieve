@@ -8,6 +8,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 public class UserFragment extends Fragment {
     public UserFragment() {
         // Required empty public constructor

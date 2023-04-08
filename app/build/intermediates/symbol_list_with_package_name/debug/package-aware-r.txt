@@ -1984,6 +1984,7 @@ dimen design_tab_text_size_2line
 dimen design_textinput_caption_translate_y
 dimen disabled_alpha_material_dark
 dimen disabled_alpha_material_light
+dimen fab_margin
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
@@ -2520,6 +2521,7 @@ drawable abc_vector_test
 drawable add
 drawable add_frame
 drawable avatar_default
+drawable avatar_fadeev
 drawable avatar_johnny
 drawable avatar_maksim
 drawable avatar_mukola
@@ -2562,6 +2564,7 @@ drawable image_3
 drawable image_4
 drawable image_5
 drawable like
+drawable loading
 drawable logo
 drawable m3_appbar_background
 drawable m3_popupmenu_background_overlay
@@ -2728,7 +2731,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id buttonMessages
 id buttonMessenger
 id buttonNews
 id buttonNotification
@@ -2768,9 +2770,10 @@ id clockwise
 id closest
 id collapseActionView
 id commentAvatar
+id commentDate
+id commentList
 id commentText
 id commentUserFullName
-id commentlList
 id compress
 id confirm_button
 id constraint
@@ -2923,6 +2926,7 @@ id message
 id messagesFragment
 id messagesFragment_to_NewsFragment
 id messagesFragment_to_tasksFragment
+id messengerImage
 id middle
 id mini
 id month_grid
@@ -3267,6 +3271,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_detail
 layout activity_main
+layout activity_post_detail
+layout activity_post_detail2
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3372,6 +3378,7 @@ mipmap ic_launcher
 mipmap ic_launcher_round
 navigation navigation
 plurals mtrl_badge_content_description
+raw data
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description
@@ -3415,7 +3422,10 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string first_fragment_label
 string hello_blank_fragment
+string hello_first_fragment
+string hello_second_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string item_view_role_description
@@ -3495,13 +3505,16 @@ string mtrl_timepicker_confirm
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description
 string news
+string next
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string previous
 string projects
 string search_menu_title
+string second_fragment_label
 string status_bar_notification_info_overflow
 string tasks
 string text_news_comment
@@ -3512,6 +3525,7 @@ string text_news_type
 string text_news_user
 string text_news_view
 string text_test
+string title_activity_post_detail
 string user
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
@@ -4119,6 +4133,9 @@ style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
 style Theme_YouAchieve
+style Theme_YouAchieve_AppBarOverlay
+style Theme_YouAchieve_NoActionBar
+style Theme_YouAchieve_PopupOverlay
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
 style ThemeOverlay_AppCompat_Dark

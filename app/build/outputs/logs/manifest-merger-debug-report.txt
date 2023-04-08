@@ -1,9 +1,10 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
+MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\vlad2\.gradle\caches\transforms-3\6509385ff8ec8e676099ca8dd74d3249\transformed\viewbinding-7.2.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\vlad2\.gradle\caches\transforms-3\5cd26f9ab2a093cf5e35a4c78d958bfd\transformed\navigation-ui-2.5.3\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\vlad2\.gradle\caches\transforms-3\bfec8dfcaf6c34e166a516bbd7a3f400\transformed\material-1.6.1\AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\vlad2\.gradle\caches\transforms-3\8ad4b0562467dfb6f3cd10869bd03e3f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:2:1-11:12
@@ -56,9 +57,9 @@ MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\vlad2\.gradle
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.5.1] C:\Users\vlad2\.gradle\caches\transforms-3\91268df8ffd79857440e160d9aebbf42\transformed\lifecycle-livedata-core-2.5.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\vlad2\.gradle\caches\transforms-3\18bea7d8b6ce63feab6ed492d57d56cb\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\vlad2\.gradle\caches\transforms-3\2af33ecfc53e92df0b334d3008fd6eb8\transformed\annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
-INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
+INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
 	package
 		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:4:5-37
 		INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml
@@ -71,16 +72,20 @@ INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\Andro
 		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-37:12
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:1-43:12
 		INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:2:11-69
 uses-permission#android.permission.
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:7:5-58
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:7:5-59
 	android:name
 		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:7:22-56
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:8:5-67
+	android:name
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:8:22-64
 application
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:9:5-35:19
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:10:5-41:19
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\vlad2\.gradle\caches\transforms-3\bfec8dfcaf6c34e166a516bbd7a3f400\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\vlad2\.gradle\caches\transforms-3\bfec8dfcaf6c34e166a516bbd7a3f400\transformed\material-1.6.1\AndroidManifest.xml:24:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] C:\Users\vlad2\.gradle\caches\transforms-3\8ad4b0562467dfb6f3cd10869bd03e3f\transformed\constraintlayout-2.1.4\AndroidManifest.xml:9:5-20
@@ -100,55 +105,67 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\vl
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.8.0] C:\Users\vlad2\.gradle\caches\transforms-3\cd33f26b4f6a5be75c2c675ec5e179dc\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:16:9-35
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:14:9-41
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:15:9-41
 	android:fullBackupContent
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:13:9-54
 	android:roundIcon
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:15:9-43
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:16:9-43
 	tools:targetApi
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:18:9-29
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:19:9-29
 	android:icon
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:13:9-38
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:14:9-38
 	android:allowBackup
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:11:9-35
 	android:theme
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:17:9-48
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:18:9-48
 	android:dataExtractionRules
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:11:9-65
-activity#com.example.youachieve.DetailActivity
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:19:9-21:40
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:12:9-65
+activity#com.example.youachieve.PostDetailActivity
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:20:9-24:67
+	android:label
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:23:13-63
 	android:exported
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:21:13-37
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:22:13-37
+	android:theme
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:24:13-64
 	android:name
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:20:13-43
-activity#com.example.youachieve.MainActivity
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:22:9-30:20
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:21:13-47
+activity#com.example.youachieve.activity.DetailActivity
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:25:9-27:40
 	android:exported
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:24:13-36
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:27:13-37
 	android:name
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:23:13-41
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:26:13-52
+activity#com.example.youachieve.activity.MainActivity
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:28:9-36:20
+	android:exported
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:30:13-36
+	android:name
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:29:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:25:13-29:29
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:31:13-35:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:26:17-69
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:32:17-69
 	android:name
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:26:25-66
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:32:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:28:17-77
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:34:17-77
 	android:name
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:28:27-74
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:34:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:32:9-34:57
+ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:38:9-40:57
 	android:resource
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:34:13-54
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:40:13-54
 	android:name
-		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:33:13-43
+		ADDED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:39:13-43
 uses-sdk
 INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\vlad2\.gradle\caches\transforms-3\6509385ff8ec8e676099ca8dd74d3249\transformed\viewbinding-7.2.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.2.1] C:\Users\vlad2\.gradle\caches\transforms-3\6509385ff8ec8e676099ca8dd74d3249\transformed\viewbinding-7.2.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\vlad2\.gradle\caches\transforms-3\5cd26f9ab2a093cf5e35a4c78d958bfd\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.5.3] C:\Users\vlad2\.gradle\caches\transforms-3\5cd26f9ab2a093cf5e35a4c78d958bfd\transformed\navigation-ui-2.5.3\AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.6.1] C:\Users\vlad2\.gradle\caches\transforms-3\bfec8dfcaf6c34e166a516bbd7a3f400\transformed\material-1.6.1\AndroidManifest.xml:20:5-22:41

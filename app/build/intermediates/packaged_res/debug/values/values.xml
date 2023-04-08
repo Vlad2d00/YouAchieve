@@ -38,6 +38,7 @@
     <dimen name="avatar_small">32dp</dimen>
     <dimen name="between_items">8dp</dimen>
     <dimen name="between_posts">8dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
     <dimen name="field_horizontal">12dp</dimen>
     <dimen name="field_vertical">8dp</dimen>
     <dimen name="icon_normal">20dp</dimen>
@@ -52,10 +53,16 @@
     <string name="app_name">YouAchieve</string>
     <string name="button_goto_main">Назад</string>
     <string name="button_goto_website">Великий и неповторимый</string>
+    <string name="first_fragment_label">First Fragment</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="messenger">Мессенджер</string>
     <string name="news">Новости</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
     <string name="projects">Проекты</string>
+    <string name="second_fragment_label">Second Fragment</string>
     <string name="tasks">Задачи</string>
     <string name="text_news_comment">10</string>
     <string name="text_news_content">Текст поста.</string>
@@ -65,6 +72,7 @@
     <string name="text_news_user">Имя Фамилия</string>
     <string name="text_news_view">1000</string>
     <string name="text_test">Тестовый текст</string>
+    <string name="title_activity_post_detail">PostDetailActivity</string>
     <string name="user">Аккаунт</string>
     <style name="Theme.YouAchieve" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         
@@ -79,4 +87,10 @@
         <item name="android:statusBarColor" ns1:targetApi="l">?attr/colorPrimaryVariant</item>
         
     </style>
+    <style name="Theme.YouAchieve.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+    <style name="Theme.YouAchieve.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.YouAchieve.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

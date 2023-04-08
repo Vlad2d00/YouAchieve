@@ -21,13 +21,18 @@
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/font/days_one.xml" value="0.27589743589743587" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/activity_detail.xml" value="0.264" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/activity_post_detail.xml" value="0.264" />
+        <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/activity_post_detail2.xml" value="0.1490036231884058" />
+        <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/content_post_detail.xml" value="0.14010416666666667" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_blank.xml" value="0.2359375" />
+        <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_first.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_messages.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_messenger.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_news.xml" value="0.2" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_post.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_post_detail.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_projects.xml" value="0.25" />
+        <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_second.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_tasks.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/fragment_user.xml" value="0.25" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/list_item_comment.xml" value="0.264" />
@@ -35,7 +40,7 @@
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/list_item_post_detail.xml" value="0.264" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/layout/list_item_task.xml" value="0.264" />
         <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/menu/bottom_nav_menu.xml" value="0.25" />
-        <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/menu/navigation_menu.xml" value="0.25" />
+        <entry key="..\:/Users/vlad2/AndroidStudioProjects/YouAchieve/app/src/main/res/menu/navigation_menu.xml" value="0.1" />
       </map>
     </option>
   </component>
