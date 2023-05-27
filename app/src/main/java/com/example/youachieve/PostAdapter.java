@@ -79,13 +79,13 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         if (postData.files.size() > 0) {
             holder.postImage.setImageResource(R.drawable.download);
             // Пока что пусть будет показываться только одно изображение, адже если их больше
-            //new LoadImage(postData.files.get(0).url, holder.postImage).execute();
+            new LoadImage(postData.files.get(0).url, holder.postImage).execute();
         }
 
         // Изображение пользователя
         if (postData.userOwnerImage != null) {
             holder.postUserAvatar.setImageResource(R.drawable.download_icon);
-            //new LoadImage(postData.userOwnerImage.url, holder.postUserAvatar).execute();
+            new LoadImage(postData.userOwnerImage.url, holder.postUserAvatar).execute();
         }
         else {
             holder.postUserAvatar.setImageResource(R.drawable.user_avatar_none);
