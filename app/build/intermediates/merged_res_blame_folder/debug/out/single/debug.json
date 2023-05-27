@@ -1,302 +1,326 @@
 [
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_post_background.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\post_background.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_underline.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\underline.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_fragment_messenger.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\fragment_messenger.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_loading.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\loading.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_user_avatar_none.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\user_avatar_none.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_list_item_comment.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\list_item_comment.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable-v24_notification.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable-v24\\notification.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_news.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\news.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_list_item_user.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\list_item_user.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_image_2.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\image_2.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_messenger.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\messenger.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_avatar_johnny.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\avatar_johnny.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_fragment_tasks.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\fragment_tasks.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_gradient_basic.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\gradient_basic.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\font_days_one.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\font\\days_one.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_image_5.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\image_5.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_underline.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\underline.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_home.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\home.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_list_item_post_detail.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\list_item_post_detail.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_search.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\search.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-hdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_ripple_effect.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\ripple_effect.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_list_item_comment.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\list_item_comment.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_avatar_default.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\avatar_default.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_logo.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\logo.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable-v24_add.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable-v24\\add.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_image_2.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\image_2.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable-v24_notification.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable-v24\\notification.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_list_item_post.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\list_item_post.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_round_button_secondary.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\round_button_secondary.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_header.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\header.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_activity_post_detail.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\activity_post_detail.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\raw_data.json.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\raw\\data.json"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_header.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\header.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_tasks.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\tasks.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_list_item_task.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\list_item_task.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_round_button_frame.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\round_button_frame.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_list_item_post.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\list_item_post.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_other.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\other.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_user.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\user.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_user.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\user.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_projects.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\projects.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\font_days_one.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\font\\days_one.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_avatar_putin.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\avatar_putin.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_home.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\home.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_image_3.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\image_3.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_settings.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\settings.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_fragment_post_detail.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\fragment_post_detail.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\xml\\backup_rules.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_avatar_maksim.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\avatar_maksim.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_activity_post_detail.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\activity_post_detail.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_fragment_messenger.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\fragment_messenger.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_activity_post_detail2.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\activity_post_detail2.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_user_avatar_example.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\user_avatar_example.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_avatar_mukola.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\avatar_mukola.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_avatar_default.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\avatar_default.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_messenger.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\messenger.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_fragment_news.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\fragment_news.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\menu_navigation_menu.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\menu\\navigation_menu.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_fragment_tasks.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\fragment_tasks.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_gradient_basic.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\gradient_basic.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable-v24_add_frame.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable-v24\\add_frame.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_search.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\search.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_background.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\background.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_image_0.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\image_0.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_view.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\view.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_activity_detail.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\activity_detail.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_view.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\view.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\raw_data.json.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\raw\\data.json"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_image_0.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\image_0.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable-v24_avatar_fadeev.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable-v24\\avatar_fadeev.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_like.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\like.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_post_background.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\post_background.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_round_button_fill.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\round_button_fill.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_tasks.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\tasks.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\menu_navigation_menu.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\menu\\navigation_menu.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_other.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\other.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_image_3.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\image_3.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_image_4.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\image_4.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_fragment_user.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\fragment_user.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_avatar_johnny.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\avatar_johnny.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_round_button_frame.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\round_button_frame.xml"
+        "merged": "com.example.youachieve.app-merged_res-43:/layout_activity_post_detail.xml.flat",
+        "source": "com.example.youachieve.app-main-45:/layout/activity_post_detail.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_fragment_projects.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\fragment_projects.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_ripple_effect.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\ripple_effect.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_activity_detail.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\activity_detail.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_avatar_mukola.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\avatar_mukola.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_comment.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\comment.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_comment.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\comment.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_menu.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\menu.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_news.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\news.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_fragment_news.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\fragment_news.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_background.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\background.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_logo.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\logo.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_image_1.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\image_1.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_navigation.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\navigation.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable-v24\\ic_launcher_foreground.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_image_4.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\image_4.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_fragment_post_detail.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\fragment_post_detail.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_fragment_projects.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\fragment_projects.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\xml\\data_extraction_rules.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_round_button_secondary.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\round_button_secondary.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_selection.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\selection.xml"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_selection.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\selection.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable-v24_add.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable-v24\\add.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\layout_list_item_post_detail.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\layout\\list_item_post_detail.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_image_5.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\image_5.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_avatar_maksim.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\avatar_maksim.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable-v24_avatar_fadeev.jpg.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable-v24\\avatar_fadeev.jpg"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_download.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\download.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_download_icon.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\download_icon.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_settings.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\settings.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_avatar_putin.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\avatar_putin.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\navigation_navigation.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\navigation\\navigation.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_like.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\like.png"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_user_avatar.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\user_avatar.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_projects.png.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\projects.png"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_image_1.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\image_1.jpg"
     },
     {
-        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-40:\\drawable_navigation.xml.flat",
-        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-42:\\drawable\\navigation.xml"
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable-v24_add_frame.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable-v24\\add_frame.png"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_menu.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\menu.png"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_round_button_fill.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\round_button_fill.xml"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_fragment_user.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\fragment_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_post_image.jpg.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\post_image.jpg"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\layout_list_item_task.xml.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\layout\\list_item_task.xml"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_loading.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\loading.png"
     }
 ]

@@ -25,10 +25,8 @@
         android:testOnly="true"
         android:theme="@style/Theme.YouAchieve" >
         <activity
-            android:name="com.example.youachieve.PostDetailActivity"
-            android:exported="false"
-            android:label="@string/title_activity_post_detail"
-            android:theme="@style/Theme.YouAchieve.NoActionBar" />
+            android:name="com.example.youachieve.activity.PostDetailActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.youachieve.activity.DetailActivity"
             android:exported="false" />
@@ -45,6 +43,11 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

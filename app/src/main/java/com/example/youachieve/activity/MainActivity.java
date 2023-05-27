@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,26 +14,23 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
-import com.example.youachieve.data.DataBase;
 import com.example.youachieve.MessengerFragment;
 import com.example.youachieve.NewsFragment;
-import com.example.youachieve.PostDetailFragment;
 import com.example.youachieve.ProjectsFragment;
 import com.example.youachieve.R;
-import com.example.youachieve.TasksFragment;
-import com.example.youachieve.UserFragment;
-import com.example.youachieve.network.LoadPosts;
+import com.example.youachieve.UserDetailFragment;
+import com.example.youachieve.utils.MyConfig;
+import com.example.youachieve.utils.MyData;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MainActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
-    private final NewsFragment newsFragment =             new NewsFragment();
-    private final MessengerFragment messengerFragment =   new MessengerFragment();
-    private final TasksFragment tasksFragment =           new TasksFragment();
-    private final ProjectsFragment projectsFragment =     new ProjectsFragment();
-    private final UserFragment userFragment =             new UserFragment();
+    private final NewsFragment newsFragment =               new NewsFragment();
+    private final MessengerFragment messengerFragment =     new MessengerFragment();
+//    private final TasksFragment tasksFragment =           new TasksFragment();
+    private final ProjectsFragment projectsFragment =       new ProjectsFragment();
+    private final UserDetailFragment userDetailFragment =   new UserDetailFragment();
 
-    private static final int idStartFragment = R.id.buttonNews;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,9 +38,12 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         Log.w("YouAchieve", "MainActivity onCreate() called");
         setContentView(R.layout.activity_main);
 
+        if (MyData.appContext == null)
+            MyData.appContext = getApplicationContext();
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.navigationView);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
-        bottomNavigationView.setSelectedItemId(idStartFragment);
+        bottomNavigationView.setSelectedItemId(MyConfig.FRAGMENT_START_ID);
 
         ImageButton buttonGotoDetail = (ImageButton) findViewById(R.id.buttonSettings);
         buttonGotoDetail.setOnClickListener(new View.OnClickListener() {
@@ -52,6 +53,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 startActivity(intent);
             }
         });
+
     }
 
     @Override
@@ -103,7 +105,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 return true;
 
             case R.id.buttonTasks:
-                replaceContent(tasksFragment, R.string.tasks);
+                // Временно отключим (((
+                replaceContent(projectsFragment, R.string.tasks);
                 return true;
 
             case R.id.buttonProjects:
@@ -111,7 +114,7 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
                 return true;
 
             case R.id.buttonUser:
-                replaceContent(userFragment, R.string.user);
+                replaceContent(userDetailFragment, R.string.user);
                 return true;
         }
         return false;

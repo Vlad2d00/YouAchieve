@@ -17,13 +17,25 @@
     <string name="text_news_comment">10</string>
     <string name="text_news_view">1000</string>
 
+    <!-- Пользователь -->
+    <string name="text_user_fullname">Полное имя</string>
+    <string name="text_user_nickname">Никнейм</string>
+    <string name="text_user_description">О себе</string>
+
     <!-- Вторая страница (для прикола) -->
-    <string name="button_goto_website">Великий и неповторимый</string>
+    <string name="button_goto_website">Великий и уникальный</string>
     <string name="button_goto_main">Назад</string>
+
+    <!-- Временно -->
+    <string name="messenger_text">Кыс-кыс</string>
+    <string name="projects_text">Границы ключ переломлен пополам\nА наш батюшка Ленин совсем усоп\nОн разложился на плесень и на липовый мёд\nА перестройка всё идёт и идёт по плану\nИ вся грязь превратилась в голый лёд\n\nИ всё идёт по плану\nВсё идёт по плану!</string>
+    <string name="user_text">Сначала зарегестрируйтесь, чтобы увдидесь свой аккаунт. Однако регистрации, конечно же, тут нету. *Фить, ха!*</string>
 
     <!-- Тест -->
     <string name="text_test">Тестовый текст</string>
-    <!-- TODO: Remove or change this placeholder text -->
+
+
+    <!-- Системное -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="title_activity_post_detail">PostDetailActivity</string>
     <!-- Strings used for fragments for navigation -->

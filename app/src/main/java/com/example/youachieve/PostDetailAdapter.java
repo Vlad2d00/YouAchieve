@@ -1,7 +1,6 @@
 package com.example.youachieve;
 
 import android.annotation.SuppressLint;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -9,28 +8,26 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.youachieve.data.MyConfig;
-import com.example.youachieve.data.MyDate;
-import com.example.youachieve.data.Post;
-import com.example.youachieve.data.TypePost;
+import com.example.youachieve.utils.MyConfig;
+import com.example.youachieve.utils.PostData;
+import com.example.youachieve.utils.TypePost;
 import com.example.youachieve.network.LoadImage;
 
 import java.util.ArrayList;
 
 public class PostDetailAdapter extends RecyclerView.Adapter<PostDetailAdapter.PostDetailViewHolder> {
-    private final ArrayList<Post> postList;
+    private ArrayList<PostData> posts_;
     private RecyclerView.RecycledViewPool viewPool = new RecyclerView.RecycledViewPool();
 
-    public PostDetailAdapter(ArrayList<Post> postList) {
-        this.postList = postList;
+    public PostDetailAdapter(ArrayList<PostData> posts) {
+        this.posts_ = posts;
     }
 
     @Override
     public int getItemCount() {
-        return postList.size();
+        return posts_.size();
     }
 
     @NonNull
@@ -49,36 +46,44 @@ public class PostDetailAdapter extends RecyclerView.Adapter<PostDetailAdapter.Po
             @NonNull PostDetailAdapter.PostDetailViewHolder holder,
             int position)
     {
-        Post post = postList.get(position);
-        Log.w("YouAchieve", "PostDetailAdapter " + post.getDate().toString());
+        PostData postData = posts_.get(position);
+        holder.postUserFullName.setText(postData.userOwner.firstName.concat(" " + postData.userOwner.lastName));
+        holder.postDate.setText(postData.post.datetimeCreate);
 
-        String userName = post.getUser().getName();
-        String userSurname = post.getUser().getSurname();
-        holder.postUserFullName.setText(userName.concat(" ").concat(userSurname));
+        TypePost typePost = TypePost.valueOf(postData.post.typePostId);
+        holder.postType.setText(typePost.toString());
+        holder.postType.setTextColor(TypePost.getIdResColor(typePost));
+        holder.postText.setText(postData.post.text);
 
-        holder.postDate.setText(new MyDate((post.getDate().getTime())).toString());
-        holder.postType.setText(post.getType().toString());
-        holder.postType.setTextColor(TypePost.getIdResColor(post.getType()));
-        holder.postText.setText(post.getText());
+        holder.postLikeCount.setText(String.valueOf(postData.post.likesCount));
+        holder.postCommentCount.setText(String.valueOf(postData.post.commentsCount));
+        holder.postViewCount.setText(String.valueOf(postData.post.viewsCount));
 
-        holder.postLikeCount.setText(String.valueOf(post.getLikeCount()));
-        holder.postCommentCount.setText(String.valueOf(post.getCommentList().size()));
-        holder.postViewCount.setText(String.valueOf(post.getViewCount()));
+        // Вначале установим фотографию загрузки, чтобы пользователь понял, что пост загружается
+        // Когда реальное фото заргузится, фото загрузки сменится на реальное
+        if (postData.files.size() > 0) {
+            holder.postImage.setImageResource(R.drawable.download);
+            // Пока что пусть будет показываться только одно изображение, адже если их больше
+            new LoadImage(postData.files.get(0).url, holder.postImage).execute();
+        }
 
-        // Если было загружено имя изоражения, то загрузить его и установить
-        if (post.getUser().getImageName().length() > 0) {
-            new LoadImage(MyConfig.URL_GET_IMAGE + post.getUser().getImageName(), holder.postAvatar).execute();
-            new LoadImage(MyConfig.URL_GET_IMAGE + post.getUser().getImageName(), holder.postImage).execute();
+        // Изображение пользователя
+        if (postData.userOwner.imageId != 0) {
+            holder.postUserAvatar.setImageResource(R.drawable.download_icon);
+            new LoadImage(postData.userOwnerImage.url, holder.postUserAvatar).execute();
         }
         else {
-            holder.postAvatar.setImageResource(R.drawable.avatar_default);
-            holder.postImage.setImageResource(R.drawable.avatar_default);
+            holder.postUserAvatar.setImageResource(R.drawable.user_avatar_none);
         }
 
-        RecyclerView recyclerView = holder.commentList.findViewById(R.id.commentList);
-        recyclerView.setHasFixedSize(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(holder.commentList.getContext()));
-        recyclerView.setAdapter(new CommentAdapter(post.getCommentList()));
+        // Список комментариев
+//        PostCommentDao postCommentDao = db.postCommentDao();
+//        List<PostComment> postComments = postCommentDao.filterByPostId(post.id);
+//
+//        RecyclerView recyclerView = holder.commentList.findViewById(R.id.commentList);
+//        recyclerView.setHasFixedSize(false);
+//        recyclerView.setLayoutManager(new LinearLayoutManager(holder.commentList.getContext()));
+//        recyclerView.setAdapter(new PostCommentAdapter((ArrayList<PostComment>) postComments));
     }
 
     static class PostDetailViewHolder extends RecyclerView.ViewHolder {
@@ -89,7 +94,7 @@ public class PostDetailAdapter extends RecyclerView.Adapter<PostDetailAdapter.Po
         TextView postLikeCount;
         TextView postCommentCount;
         TextView postViewCount;
-        ImageView postAvatar;
+        ImageView postUserAvatar;
         ImageView postImage;
         RecyclerView commentList;
 
@@ -103,7 +108,7 @@ public class PostDetailAdapter extends RecyclerView.Adapter<PostDetailAdapter.Po
             this.postCommentCount = itemView.findViewById(R.id.postCommentCount);
             this.postViewCount = itemView.findViewById(R.id.postViewCount);
             this.postUserFullName = itemView.findViewById(R.id.postUserFullName);
-            this.postAvatar = itemView.findViewById(R.id.postAvatar);
+            this.postUserAvatar = itemView.findViewById(R.id.postUserAvatar);
             this.postImage = itemView.findViewById(R.id.postImage);
             this.commentList = itemView.findViewById(R.id.commentList);
         }

@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     android:background="@drawable/background"
     android:gravity="center"
+    android:orientation="vertical"
+    android:layout_gravity="center"
     tools:context=".MessengerFragment">
 
     <ImageView
@@ -12,5 +14,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="@dimen/text_normal"
+        android:gravity="center"
+        android:text="@string/messenger_text" />
 
 </LinearLayout>

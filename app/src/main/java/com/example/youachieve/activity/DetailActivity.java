@@ -1,15 +1,15 @@
 package com.example.youachieve.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-import com.example.youachieve.PostDetailAdapter;
 import com.example.youachieve.R;
-import com.example.youachieve.data.DataBase;
-import com.example.youachieve.data.Post;
+import com.example.youachieve.db.entity.Post;
 
 import java.util.ArrayList;
 
@@ -19,14 +19,16 @@ public class DetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_post_detail);
+        setContentView(R.layout.activity_detail);
 
-        postList_.add(DataBase.selectedPost);
-
-        RecyclerView recyclerView = findViewById(R.id.postDetailList);
-        recyclerView.setHasFixedSize(false);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new PostDetailAdapter(postList_));
-
+        Button buttonGotoDetail = (Button) findViewById(R.id.button_goto_website);
+        buttonGotoDetail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_VIEW);
+                intent.setData(Uri.parse("https://www.youtube.com/watch?v=FTu_ndnh-wc"));
+                startActivity(intent);
+            }
+        });
     }
 }

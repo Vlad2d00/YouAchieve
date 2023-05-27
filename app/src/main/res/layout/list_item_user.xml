@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@drawable/post_background"
+    android:layout_marginBottom="@dimen/between_posts">
+
+    <!-- Заголовок поста -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/field_horizontal"
+        android:paddingTop="@dimen/field_vertical">
+
+        <!-- Аватарка -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            app:cardCornerRadius="@dimen/user_image_radius">
+
+            <ImageView
+                android:id="@+id/userAvatar"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/user_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/user_avatar_example"/>
+        </androidx.cardview.widget.CardView>
+
+
+        <!-- Заголовочная информация о посте -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/field_horizontal"
+                android:orientation="vertical"
+                android:layout_marginVertical="@dimen/field_horizontal">
+
+                <!-- Имя и фамилия -->
+                <TextView
+                    android:id="@+id/userNickname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_user_nickname"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_normal" />
+
+                <!-- Имя и фамилия -->
+                <TextView
+                    android:id="@+id/userFullName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_user_fullname"
+                    android:textColor="@color/text_primary"
+                    android:textStyle="bold"
+                    android:textSize="@dimen/text_normal" />
+
+                <!-- Дата и время -->
+                <TextView
+                    android:id="@+id/userDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_user_description"
+                    android:textColor="@color/text_primary"
+                    android:textSize="@dimen/text_small" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

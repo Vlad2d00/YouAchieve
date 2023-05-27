@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.youachieve.app-mergeDebugResources-38:/values-ne/values-ne.xml",
+            "outputFile": "com.example.youachieve.app-mergeDebugResources-41:/values-ne/values-ne.xml",
             "map": [
                 {
                     "source": "C:\\Users\\vlad2\\.gradle\\caches\\transforms-3\\cd33f26b4f6a5be75c2c675ec5e179dc\\transformed\\core-1.8.0\\res\\values-ne\\values-ne.xml",

@@ -1,6 +1,5 @@
 package com.example.youachieve;
 
-import android.annotation.SuppressLint;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,15 +8,13 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.os.Handler;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.youachieve.data.DataBase;
-import com.example.youachieve.data.MyConfig;
 import com.example.youachieve.network.LoadPosts;
+import com.example.youachieve.utils.MyData;
 
 public class NewsFragment extends Fragment {
     private RecyclerView recyclerView_;
@@ -39,12 +36,11 @@ public class NewsFragment extends Fragment {
         recyclerView_ = view.findViewById(R.id.postList);
         recyclerView_.setHasFixedSize(false);
         recyclerView_.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        postAdapter_ = new PostAdapter(DataBase.postList, getParentFragmentManager().beginTransaction());
+        postAdapter_ = new PostAdapter();
         recyclerView_.setAdapter(postAdapter_);
 
         initScrollListener();
 
-        DataBase.postList.clear();
         new LoadPosts(postAdapter_).execute();
 
         return view;
@@ -68,9 +64,11 @@ public class NewsFragment extends Fragment {
 
                  LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
                  if (!postAdapter_.isLoading()) {
-                     // Если долистали до конца списка, то загрузим следующие его элементы
-                     if (linearLayoutManager != null && linearLayoutManager.
-                             findLastCompletelyVisibleItemPosition() == DataBase.postList.size() - 1)
+                     // Если долистали до конца списка и это не конец,
+                     // то загрузим следующие его элементы
+                     if (linearLayoutManager != null &&
+                             linearLayoutManager.findLastCompletelyVisibleItemPosition() ==
+                                     MyData.posts.size() - 1 && !MyData.is_end_posts)
                      {
                          // Загрузим новые посты
                          new LoadPosts(postAdapter_).execute();

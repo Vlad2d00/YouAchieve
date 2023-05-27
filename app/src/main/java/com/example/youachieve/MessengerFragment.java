@@ -12,9 +12,6 @@ import android.view.ViewGroup;
 import com.example.youachieve.network.LoadImage;
 
 public class MessengerFragment extends Fragment {
-    public MessengerFragment() {
-        // Required empty public constructor
-    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -59,6 +56,5 @@ public class MessengerFragment extends Fragment {
         super.onDestroy();
         Log.w("YouAchieve", "MessengerFragment onDestroy() called");
     }
-
 
 }

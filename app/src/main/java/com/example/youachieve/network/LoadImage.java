@@ -26,6 +26,7 @@ public class LoadImage extends AsyncTask<String, Integer, Bitmap> {
 
     @Override
     protected void onPreExecute() {
+        Log.d("YouAchieve", "LoadImage onPostExecute() called");
         super.onPreExecute();
         // Выставляем картинку загрузки
         imageView_.setImageResource(R.drawable.loading);
@@ -54,6 +55,7 @@ public class LoadImage extends AsyncTask<String, Integer, Bitmap> {
 
     @Override
     protected void onPostExecute(Bitmap bitmap) {
+        Log.d("YouAchieve", "LoadImage onPostExecute() called");
         imageView_.setImageBitmap(bitmap);
     }
 }

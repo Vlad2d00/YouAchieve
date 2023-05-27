@@ -10,15 +10,20 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.youachieve.data.Post;
+import com.example.youachieve.utils.PostData;
 
 import java.util.ArrayList;
 
 public class PostDetailFragment extends Fragment {
-    private final ArrayList<Post> postList = new ArrayList<Post>();
+    private ArrayList<PostData> posts_;
 
-    public PostDetailFragment(Post post) {
-        this.postList.add(post);
+    public PostDetailFragment() {
+        posts_ = new ArrayList<PostData>();
+    }
+
+    public void setPost(PostData postData) {
+        posts_.clear();
+        posts_.add(postData);
     }
 
     @Override
@@ -29,7 +34,7 @@ public class PostDetailFragment extends Fragment {
         RecyclerView recyclerView = view.findViewById(R.id.postDetailList);
         recyclerView.setHasFixedSize(false);
         recyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        recyclerView.setAdapter(new PostDetailAdapter(this.postList));
+        recyclerView.setAdapter(new PostDetailAdapter(posts_));
 
         return view;
     }
