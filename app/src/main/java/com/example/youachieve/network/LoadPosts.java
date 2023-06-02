@@ -9,6 +9,7 @@ import androidx.room.Room;
 import com.example.youachieve.PostAdapter;
 import com.example.youachieve.db.App;
 import com.example.youachieve.db.AppDatabase;
+import com.example.youachieve.db.FileStorage;
 import com.example.youachieve.db.entity.Attachment;
 import com.example.youachieve.db.dao.AttachmentDao;
 import com.example.youachieve.db.entity.File;
@@ -16,6 +17,7 @@ import com.example.youachieve.db.dao.FileDao;
 import com.example.youachieve.db.entity.Image;
 import com.example.youachieve.db.dao.ImageDao;
 import com.example.youachieve.db.dao.ImageMiniatureDao;
+import com.example.youachieve.db.entity.ImageMiniature;
 import com.example.youachieve.db.entity.Post;
 import com.example.youachieve.db.dao.PostDao;
 import com.example.youachieve.db.entity.User;
@@ -57,22 +59,26 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
     @Override
     protected Void doInBackground(String... params)
     {
-        if (!MyData.is_init_posts) {
-            //loadFromDatabase();
-            MyData.is_init_posts = true;
-        }
-
         if (!MyData.is_end_posts) {
-            loadFromServer();
+            boolean ret = false;
+            if (Internet.isInternetAvailable()) {
+                ret = loadFromServer();
+            }
+
+            if (!ret && !MyData.is_init_posts) {
+                loadFromDatabase();
+            }
         }
 
+        MyData.is_init_posts = true;
         return null;
     }
 
-    private void loadFromServer()
+    private boolean loadFromServer()
     {
         URL url;
         HttpURLConnection urlConnection = null;
+        boolean ret = false;
 
         try {
             url = new URL(MyConfig.URL_POSTS);
@@ -84,10 +90,11 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
 
             // Параметры POST запроса
             String requestBody = "token=" + MyConfig.USER_TOKEN + "&" +
-                    "count=" + String.valueOf(MyConfig.POSTS_LOAD_COUNT) + "&" +
-                    "offset=" + String.valueOf(MyData.posts_load_count);
-            try(OutputStreamWriter writer = new OutputStreamWriter(
-                    urlConnection.getOutputStream())) {
+                    "count=" + MyConfig.POSTS_LOAD_COUNT + "&" +
+                    "offset=" + MyData.posts_load_count;
+            try (OutputStreamWriter writer = new OutputStreamWriter(
+                    urlConnection.getOutputStream()))
+            {
                 writer.write(requestBody);
             }
 
@@ -106,11 +113,12 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
                 String response = result.toString();
 
                 Log.d("YouAchieve", "LoadPosts response " + response);
+                ret = true;
 
                 // Обнулим данные, которые уже были отображены пользователю и заменим на свежие,
                 // если это первая подгрузка постов
                 if (MyData.posts_load_count == 0) {
-                    //deleteAllPosts();
+                    deleteAllPosts();
                     MyData.posts.clear();
                 }
 
@@ -124,6 +132,7 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
             else {
                 Log.d("YouAchieve", "ERROR: LoadPosts (code " + code + ')');
             }
+
         }
         catch (Exception e) {
             e.printStackTrace();
@@ -132,28 +141,38 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
             if (urlConnection != null)
                 urlConnection.disconnect();
         }
+        return ret;
     }
 
     private void deleteAllPosts()
     {
         AppDatabase db = Room.databaseBuilder(MyData.appContext,
-                        AppDatabase.class, "database-name")
+                        AppDatabase.class, "database")
                 .fallbackToDestructiveMigration().build();
 
-        PostDao postDao = db.postDao();
+        ImageMiniatureDao imageMiniatureDao = db.imageMiniatureDao();
+        ImageDao imageDao = db.imageDao();
         AttachmentDao attachmentDao = db.attachmentDao();
         FileDao fileDao = db.fileDao();
-        ImageDao imageDao = db.imageDao();
-        ImageMiniatureDao imageMiniatureDao = db.imageMiniatureDao();
+        PostDao postDao = db.postDao();
+        UserDao userDao = db.userDao();
 
-        // Удалим файлы постов с Shared Preferences, а потом из БД
+//        postDao.deleteAll();
+//        userDao.deleteAll();
+//        attachmentDao.deleteAll();
+//        imageDao.deleteAll();
+//        imageMiniatureDao.deleteAll();
+//        fileDao.deleteAll();
+
         for (File file : fileDao.filterByPosts()) {
-            imageMiniatureDao.delete(imageMiniatureDao.getById(file.id));
-            imageDao.delete(imageDao.getById(file.id));
-
-            attachmentDao.delete(attachmentDao.getById(file.attachmentId));
+            Attachment attachment = attachmentDao.getById(file.attachmentId);
+            if (attachment != null)
+                attachmentDao.delete(attachment);
 
             fileDao.delete(file);
+
+            // удаялем файл физически
+            FileStorage.deleteFile(file.name, MyData.appContext);
         }
 
         postDao.deleteAll();
@@ -163,13 +182,14 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
     private int parsePosts(String response) throws JSONException
     {
         AppDatabase db = Room.databaseBuilder(MyData.appContext,
-                AppDatabase.class, "database-name")
+                AppDatabase.class, "database")
                 .fallbackToDestructiveMigration().build();
 
         UserDao userDao = db.userDao();
         PostDao postDao = db.postDao();
         FileDao fileDao = db.fileDao();
         ImageDao imageDao = db.imageDao();
+        ImageMiniatureDao imageMiniatureDao = db.imageMiniatureDao();
         AttachmentDao attachmentDao = db.attachmentDao();
 
         JSONObject jsonObject = new JSONObject(response);
@@ -207,18 +227,26 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
 
                 if (userImageUrl != null) {
                     File file = new File(userImageUrl);
-                    //fileDao.insert(file);
+                    fileDao.insert(file);
 
+                    file = fileDao.getLast();
+                    ImageMiniature imageMiniature = new ImageMiniature(file.id);
+                    imageMiniatureDao.insert(imageMiniature);
+
+                    imageMiniature = imageMiniatureDao.getLast();
                     Image image = new Image();
-                    image.miniatureId = file.id;
-                    //imageDao.insert(image);
+                    image.miniatureId = imageMiniature.fileId;
+                    image.fileId = imageMiniature.fileId;
+                    imageDao.insert(image);
 
+                    image = imageDao.getLast();
                     userOwner.imageId = image.fileId;
                     postData.userOwnerImage = file;
                 }
-                //userDao.insert(userOwner);
+                userDao.insert(userOwner);
             }
             postData.userOwner = userOwner;
+            postData.userOwnerImage = fileDao.getById(userOwner.imageId);
 
             // Создаем пост
             Post post = new Post(postId, userOwner.id, postTypeId, text, datetimeCreate);
@@ -232,7 +260,8 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
                 if (jsonFileUrlList.length() > 0) {
                     // Создаем вложение для файлов поста
                     Attachment attachment = new Attachment();
-                    //attachmentDao.insert(attachment);
+                    attachmentDao.insert(attachment);
+                    attachment = attachmentDao.getLast();
                     post.attachmentId = attachment.id;
 
                     // Создаем файлы поста
@@ -241,14 +270,15 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
 
                         File file = new File(fileUrl);
                         file.attachmentId = attachment.id;
-                        //fileDao.insert(file);
+                        fileDao.insert(file);
 
+                        file = fileDao.getLast();
                         postData.files.add(file);
                     }
                 }
             }
 
-            //postDao.insert(post);
+            postDao.insert(post);
             postData.post = post;
             MyData.posts.add(postData);
         }
@@ -259,7 +289,7 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
     {
         // БД
         AppDatabase db = Room.databaseBuilder(MyData.appContext,
-                        AppDatabase.class, "database-name")
+                        AppDatabase.class, "database")
                 .fallbackToDestructiveMigration().build();
 
         PostDao postDao = db.postDao();
@@ -274,7 +304,9 @@ public class LoadPosts extends AsyncTask<String, Integer, Void> {
             postData.post = post;
             postData.userOwner = userDao.getById(post.userOwnerId);
             postData.userOwnerImage = fileDao.getById(postData.userOwner.imageId);
-            postData.files = (ArrayList<File>) fileDao.filterByAttachmentId(post.attachmentId);
+            if (post.attachmentId != 0) {
+                postData.files = (ArrayList<File>) fileDao.filterByAttachmentId(post.attachmentId);
+            }
 
             MyData.posts.add(postData);
         }

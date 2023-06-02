@@ -1,6 +1,7 @@
 package com.example.youachieve.network;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -8,20 +9,31 @@ import android.util.Log;
 import android.widget.ImageView;
 
 import com.example.youachieve.R;
+import com.example.youachieve.db.FileStorage;
+import com.example.youachieve.utils.MyData;
 
+import java.io.ByteArrayOutputStream;
+import java.io.FileOutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
 
 public class LoadImage extends AsyncTask<String, Integer, Bitmap> {
+    private static final int dataSize_ = 10 * 1024 * 1024;
+
     private final String requestUrl_;
+    private final String fileName_;
     @SuppressLint("StaticFieldLeak")
     private final ImageView imageView_;
+    @SuppressLint("StaticFieldLeak")
+    private final Context context_;
 
-    public LoadImage(String requestUrl, ImageView imageView) {
+    public LoadImage(String requestUrl, String fileName, ImageView imageView, Context context) {
         super();
         requestUrl_ = requestUrl;
         imageView_ = imageView;
+        fileName_ = fileName;
+        context_ = context;
     }
 
     @Override
@@ -38,17 +50,36 @@ public class LoadImage extends AsyncTask<String, Integer, Bitmap> {
         HttpURLConnection urlConnection = null;
         Bitmap bitmap = null;
 
-        try {
-            url = new URL(requestUrl_);
-            urlConnection = (HttpURLConnection) url.openConnection();
-            bitmap = BitmapFactory.decodeStream(urlConnection.getInputStream());
+        byte[] data = new byte[dataSize_];
+        int count = FileStorage.readFile(fileName_, context_, data);
+
+        if (count >= 0) {
+            bitmap = BitmapFactory.decodeByteArray(data, 0, data.length);
         }
-        catch (Exception e) {
-            e.printStackTrace();
-        }
-        finally {
-            if (urlConnection != null)
-                urlConnection.disconnect();
+        else {
+            if (!Internet.isInternetAvailable()) {
+                return null;
+            }
+
+            try {
+                url = new URL(requestUrl_);
+                urlConnection = (HttpURLConnection) url.openConnection();
+                bitmap = BitmapFactory.decodeStream(urlConnection.getInputStream());
+
+                if (bitmap!= null) {
+                    ByteArrayOutputStream stream = new ByteArrayOutputStream();
+                    bitmap.compress(Bitmap.CompressFormat.PNG, 100, stream);
+                    data = stream.toByteArray();
+                    FileStorage.writeFile(fileName_, context_, data);
+                }
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+            finally {
+                if (urlConnection != null)
+                    urlConnection.disconnect();
+            }
         }
         return bitmap;
     }
@@ -56,6 +87,11 @@ public class LoadImage extends AsyncTask<String, Integer, Bitmap> {
     @Override
     protected void onPostExecute(Bitmap bitmap) {
         Log.d("YouAchieve", "LoadImage onPostExecute() called");
-        imageView_.setImageBitmap(bitmap);
+        if (bitmap != null) {
+            imageView_.setImageBitmap(bitmap);
+        }
+        else {
+            imageView_.setImageResource(R.drawable.download_error);
+        }
     }
 }

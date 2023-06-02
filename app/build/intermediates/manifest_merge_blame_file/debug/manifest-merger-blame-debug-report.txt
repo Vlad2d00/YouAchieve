@@ -13,113 +13,118 @@
 11    <uses-permission android:name="android.permission." />
 11-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:7:5-59
 11-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:7:22-56
-12    <uses-permission android:name="android.permission.INTERNET" />
-12-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:8:5-67
-12-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:8:22-64
-13
-14    <application
-14-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:10:5-39:19
-15        android:allowBackup="true"
-15-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:11:9-35
-16        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-16-->[androidx.core:core:1.8.0] C:\Users\vlad2\.gradle\caches\transforms-3\cd33f26b4f6a5be75c2c675ec5e179dc\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
-17        android:dataExtractionRules="@xml/data_extraction_rules"
-17-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:12:9-65
-18        android:debuggable="true"
-19        android:extractNativeLibs="false"
-20        android:fullBackupContent="@xml/backup_rules"
-20-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:13:9-54
-21        android:icon="@drawable/logo"
-21-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:14:9-38
-22        android:label="@string/app_name"
-22-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:15:9-41
-23        android:roundIcon="@drawable/logo"
-23-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:16:9-43
-24        android:supportsRtl="true"
-24-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:17:9-35
-25        android:testOnly="true"
-26        android:theme="@style/Theme.YouAchieve" >
-26-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:18:9-48
-27        <activity
-27-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:20:9-22:40
-28            android:name="com.example.youachieve.activity.PostDetailActivity"
-28-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:21:13-56
-29            android:exported="false" />
-29-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:22:13-37
-30        <activity
-30-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:23:9-25:40
-31            android:name="com.example.youachieve.activity.DetailActivity"
-31-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:24:13-52
-32            android:exported="false" />
-32-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:25:13-37
-33        <activity
-33-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:26:9-34:20
-34            android:name="com.example.youachieve.activity.MainActivity"
-34-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:27:13-50
-35            android:exported="true" >
-35-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:28:13-36
-36            <intent-filter>
-36-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:29:13-33:29
-37                <action android:name="android.intent.action.MAIN" />
-37-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:30:17-69
-37-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:30:25-66
-38
-39                <category android:name="android.intent.category.LAUNCHER" />
-39-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:32:17-77
-39-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:32:27-74
-40            </intent-filter>
-41        </activity>
-42
-43        <meta-data
-43-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:36:9-38:57
-44            android:name="preloaded_fonts"
-44-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:37:13-43
-45            android:resource="@array/preloaded_fonts" />
-45-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:38:13-54
-46
-47        <service
-47-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
-48            android:name="androidx.room.MultiInstanceInvalidationService"
-48-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
-49            android:directBootAware="true"
-49-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
-50            android:exported="false" />
-50-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
-51
-52        <provider
-52-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-53            android:name="androidx.startup.InitializationProvider"
-53-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
-54            android:authorities="com.example.youachieve.androidx-startup"
-54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
-55            android:exported="false" >
-55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
-56            <meta-data
-56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-57                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
-58                android:value="androidx.startup" />
-58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
-59            <meta-data
-59-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vlad2\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-60                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-60-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vlad2\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-61                android:value="androidx.startup" />
-61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vlad2\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-62        </provider>
-63
-64        <uses-library
-64-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
-65            android:name="androidx.window.extensions"
-65-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
-66            android:required="false" />
-66-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
-67        <uses-library
-67-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
-68            android:name="androidx.window.sidecar"
-68-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
-69            android:required="false" />
-69-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
-70    </application>
-71
-72</manifest>
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:8:5-79
+12-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:8:22-76
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:9:5-67
+13-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:9:22-64
+14
+15    <application
+15-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:11:5-41:19
+16        android:allowBackup="true"
+16-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:12:9-35
+17        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+17-->[androidx.core:core:1.8.0] C:\Users\vlad2\.gradle\caches\transforms-3\cd33f26b4f6a5be75c2c675ec5e179dc\transformed\core-1.8.0\AndroidManifest.xml:24:18-86
+18        android:dataExtractionRules="@xml/data_extraction_rules"
+18-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:13:9-65
+19        android:debuggable="true"
+20        android:extractNativeLibs="false"
+21        android:fullBackupContent="@xml/backup_rules"
+21-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:14:9-54
+22        android:icon="@drawable/logo"
+22-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:15:9-38
+23        android:label="@string/app_name"
+23-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:16:9-41
+24        android:roundIcon="@drawable/logo"
+24-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:17:9-43
+25        android:supportsRtl="true"
+25-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:18:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.YouAchieve"
+27-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:19:9-48
+28        android:usesCleartextTraffic="true" >
+28-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:21:9-44
+29        <activity
+29-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:22:9-24:40
+30            android:name="com.example.youachieve.activity.PostDetailActivity"
+30-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:23:13-56
+31            android:exported="false" />
+31-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:24:13-37
+32        <activity
+32-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:25:9-27:40
+33            android:name="com.example.youachieve.activity.DetailActivity"
+33-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:26:13-52
+34            android:exported="false" />
+34-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:27:13-37
+35        <activity
+35-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:28:9-36:20
+36            android:name="com.example.youachieve.activity.MainActivity"
+36-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:29:13-50
+37            android:exported="true" >
+37-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:30:13-36
+38            <intent-filter>
+38-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:31:13-35:29
+39                <action android:name="android.intent.action.MAIN" />
+39-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:32:17-69
+39-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:32:25-66
+40
+41                <category android:name="android.intent.category.LAUNCHER" />
+41-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:34:17-77
+41-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:34:27-74
+42            </intent-filter>
+43        </activity>
+44
+45        <meta-data
+45-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:38:9-40:57
+46            android:name="preloaded_fonts"
+46-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:39:13-43
+47            android:resource="@array/preloaded_fonts" />
+47-->C:\Users\vlad2\AndroidStudioProjects\YouAchieve\app\src\main\AndroidManifest.xml:40:13-54
+48
+49        <service
+49-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:25:9-28:40
+50            android:name="androidx.room.MultiInstanceInvalidationService"
+50-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:26:13-74
+51            android:directBootAware="true"
+51-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:27:13-43
+52            android:exported="false" />
+52-->[androidx.room:room-runtime:2.4.2] C:\Users\vlad2\.gradle\caches\transforms-3\4a3b5f33337ded1b81c553095eeef74a\transformed\room-runtime-2.4.2\AndroidManifest.xml:28:13-37
+53
+54        <provider
+54-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+55            android:name="androidx.startup.InitializationProvider"
+55-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+56            android:authorities="com.example.youachieve.androidx-startup"
+56-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+57            android:exported="false" >
+57-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+58            <meta-data
+58-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+59                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+59-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+60                android:value="androidx.startup" />
+60-->[androidx.emoji2:emoji2:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\9cb5d0b2fd275b8005e0d8fda37c4df6\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+61            <meta-data
+61-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vlad2\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+62                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+62-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vlad2\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+63                android:value="androidx.startup" />
+63-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\vlad2\.gradle\caches\transforms-3\8eef53d9995d138e5396bc0361630197\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+64        </provider>
+65
+66        <uses-library
+66-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:25:9-27:40
+67            android:name="androidx.window.extensions"
+67-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:26:13-54
+68            android:required="false" />
+68-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:27:13-37
+69        <uses-library
+69-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:28:9-30:40
+70            android:name="androidx.window.sidecar"
+70-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:29:13-51
+71            android:required="false" />
+71-->[androidx.window:window:1.0.0] C:\Users\vlad2\.gradle\caches\transforms-3\e76a7549cd3482ebe8c44ae2df2a404e\transformed\window-1.0.0\AndroidManifest.xml:30:13-37
+72    </application>
+73
+74</manifest>

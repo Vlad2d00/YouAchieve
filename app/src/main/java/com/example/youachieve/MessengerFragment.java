@@ -10,6 +10,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.youachieve.network.LoadImage;
+import com.example.youachieve.utils.MyData;
 
 public class MessengerFragment extends Fragment {
 
@@ -19,10 +20,9 @@ public class MessengerFragment extends Fragment {
         Log.w("YouAchieve", "MessengerFragment onCreateView() called");
         View view = inflater.inflate(R.layout.fragment_messenger, container, false);
 
-        new LoadImage(
-                "https://mobimg.b-cdn.net/v3/fetch/b6/b67444cbf58152bc6e666615cb08f0f5.jpeg",
-                view.findViewById(R.id.messengerImage)
-        ).execute();
+        String url = "https://mobimg.b-cdn.net/v3/fetch/b6/b67444cbf58152bc6e666615cb08f0f5.jpeg";
+        new LoadImage(url, "cat.jpeg", view.findViewById(R.id.messengerImage),
+                MyData.appContext).execute();
 
         return view;
     }

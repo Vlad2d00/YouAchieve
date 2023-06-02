@@ -7,6 +7,7 @@ public class PostCommentData {
     public String userFirstName;
     public String userLastName;
     public String userImageUrl;
+    public String userImageName;
 
     public String text;
     public String datetimeCreate;

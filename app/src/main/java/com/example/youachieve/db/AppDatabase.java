@@ -29,7 +29,7 @@ import com.example.youachieve.db.entity.User;
         PostComment.class,
         Post.class,
         User.class,
-}, version = 14)
+}, version = 15)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract AttachmentDao attachmentDao();
     public abstract AuthenticationDao authenticationDao();

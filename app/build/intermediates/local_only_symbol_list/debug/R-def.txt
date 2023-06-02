@@ -46,6 +46,7 @@ drawable add_frame
 drawable background
 drawable comment
 drawable download
+drawable download_error
 drawable download_icon
 drawable gradient_basic
 drawable header

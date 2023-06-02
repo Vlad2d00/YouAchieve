@@ -8,6 +8,7 @@ import androidx.room.Update;
 
 import com.example.youachieve.db.entity.File;
 import com.example.youachieve.db.entity.Image;
+import com.example.youachieve.db.entity.ImageMiniature;
 
 import java.util.List;
 
@@ -20,6 +21,11 @@ public interface ImageDao {
             "WHERE file_id = :file_id " +
             "LIMIT 1")
     Image getById(int file_id);
+
+    @Query("SELECT * FROM images " +
+            "ORDER BY file_id DESC " +
+            "LIMIT 1")
+    Image getLast();
 
     @Query("DELETE FROM images ")
     void deleteAll();

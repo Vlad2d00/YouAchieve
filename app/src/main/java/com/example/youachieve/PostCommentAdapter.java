@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youachieve.db.entity.PostComment;
 import com.example.youachieve.network.LoadImage;
+import com.example.youachieve.utils.MyData;
 import com.example.youachieve.utils.MyDate;
 import com.example.youachieve.utils.PostCommentData;
 
@@ -54,7 +55,10 @@ class PostCommentAdapter extends RecyclerView.Adapter<PostCommentAdapter.PostCom
         // Изображение пользователя
         if (comment.userImageUrl != null) {
             holder.commentAvatar.setImageResource(R.drawable.download_icon);
-            new LoadImage(comment.userImageUrl, holder.commentAvatar).execute();
+
+            String url = comment.userImageUrl;
+            String name = comment.userImageName;
+            new LoadImage(url, name, holder.commentAvatar, MyData.appContext).execute();
         }
         else {
             holder.commentAvatar.setImageResource(R.drawable.user_avatar_none);

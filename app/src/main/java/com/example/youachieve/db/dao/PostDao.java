@@ -15,7 +15,8 @@ import java.util.List;
 
 @Dao
 public interface PostDao {
-    @Query("SELECT * FROM posts ")
+    @Query("SELECT * FROM posts " +
+            "ORDER BY id DESC ")
     List<Post> getAll();
 
     @Query("SELECT * FROM posts " +

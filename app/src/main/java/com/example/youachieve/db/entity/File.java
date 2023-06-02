@@ -7,11 +7,7 @@ import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 import androidx.room.Relation;
 
-@Entity(tableName = "files", foreignKeys = {
-//        @ForeignKey(entity = Attachment.class,
-//                parentColumns = "id",
-//                childColumns = "attachment_id"),
-})
+@Entity(tableName = "files")
 public class File {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
@@ -24,10 +20,20 @@ public class File {
     @ColumnInfo(name = "attachment_id")
     public int attachmentId = 0;
 
-    @ColumnInfo(name = "path")
-    public String path = null;
+    @ColumnInfo(name = "name")
+    public String name;
 
     public File(@NonNull String url) {
         this.url = url;
+
+        String[] strings = url.split("/");
+        int i = strings.length - 1;
+        if (strings[i].length() == 0) {
+            i -= 1;
+        }
+        if (i >= 0)
+            this.name = strings[i];
+        else
+            this.name = null;
     }
 }

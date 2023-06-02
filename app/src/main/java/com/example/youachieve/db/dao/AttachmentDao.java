@@ -7,6 +7,7 @@ import androidx.room.Query;
 import androidx.room.Update;
 
 import com.example.youachieve.db.entity.Attachment;
+import com.example.youachieve.db.entity.File;
 import com.example.youachieve.db.entity.ImageMiniature;
 import com.example.youachieve.db.entity.User;
 
@@ -21,6 +22,11 @@ public interface AttachmentDao {
             "WHERE id = :attachmentId " +
             "LIMIT 1")
     Attachment getById(int attachmentId);
+
+    @Query("SELECT * FROM attachments " +
+            "ORDER BY id DESC " +
+            "LIMIT 1")
+    Attachment getLast();
 
     @Query("DELETE FROM attachments ")
     void deleteAll();

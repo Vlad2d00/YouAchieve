@@ -63,14 +63,12 @@ public class NewsFragment extends Fragment {
                  super.onScrolled(recyclerView, dx, dy);
 
                  LinearLayoutManager linearLayoutManager = (LinearLayoutManager) recyclerView.getLayoutManager();
-                 if (!postAdapter_.isLoading()) {
+                 if (linearLayoutManager != null && !postAdapter_.isLoading()) {
                      // Если долистали до конца списка и это не конец,
                      // то загрузим следующие его элементы
-                     if (linearLayoutManager != null &&
-                             linearLayoutManager.findLastCompletelyVisibleItemPosition() ==
-                                     MyData.posts.size() - 1 && !MyData.is_end_posts)
-                     {
-                         // Загрузим новые посты
+                     int pos = linearLayoutManager.findLastCompletelyVisibleItemPosition();
+
+                     if (pos == MyData.posts.size() - 1 && !MyData.is_end_posts) {
                          new LoadPosts(postAdapter_).execute();
                      }
                  }

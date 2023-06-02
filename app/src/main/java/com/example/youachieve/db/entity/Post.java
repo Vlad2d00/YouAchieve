@@ -10,9 +10,6 @@ import androidx.room.PrimaryKey;
         @ForeignKey(entity = User.class,
                 parentColumns = "id",
                 childColumns = "user_owner_id"),
-//        @ForeignKey(entity = Attachment.class,
-//                parentColumns = "id",
-//                childColumns = "attachment_id"),
 })
 public class Post {
     @PrimaryKey

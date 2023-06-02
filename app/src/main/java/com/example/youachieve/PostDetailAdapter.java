@@ -11,6 +11,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.youachieve.utils.MyConfig;
+import com.example.youachieve.utils.MyData;
 import com.example.youachieve.utils.PostData;
 import com.example.youachieve.utils.TypePost;
 import com.example.youachieve.network.LoadImage;
@@ -64,13 +65,20 @@ public class PostDetailAdapter extends RecyclerView.Adapter<PostDetailAdapter.Po
         if (postData.files.size() > 0) {
             holder.postImage.setImageResource(R.drawable.download);
             // Пока что пусть будет показываться только одно изображение, адже если их больше
-            new LoadImage(postData.files.get(0).url, holder.postImage).execute();
+            String url = postData.files.get(0).url;
+            String name = postData.files.get(0).name;
+            new LoadImage(url, name, holder.postImage, MyData.appContext).execute();
+        }
+        else {
+            holder.postImage.setVisibility(View.GONE);
         }
 
         // Изображение пользователя
-        if (postData.userOwner.imageId != 0) {
+        if (postData.userOwnerImage != null) {
             holder.postUserAvatar.setImageResource(R.drawable.download_icon);
-            new LoadImage(postData.userOwnerImage.url, holder.postUserAvatar).execute();
+            String url = postData.userOwnerImage.url;
+            String name = postData.userOwnerImage.name;
+            new LoadImage(url, name, holder.postUserAvatar, MyData.appContext).execute();
         }
         else {
             holder.postUserAvatar.setImageResource(R.drawable.user_avatar_none);

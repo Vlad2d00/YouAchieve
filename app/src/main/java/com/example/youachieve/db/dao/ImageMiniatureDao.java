@@ -6,6 +6,7 @@ import androidx.room.Insert;
 import androidx.room.Query;
 import androidx.room.Update;
 
+import com.example.youachieve.db.entity.File;
 import com.example.youachieve.db.entity.Image;
 import com.example.youachieve.db.entity.ImageMiniature;
 
@@ -20,6 +21,11 @@ public interface ImageMiniatureDao {
             "WHERE file_id = :file_id " +
             "LIMIT 1")
     ImageMiniature getById(int file_id);
+
+    @Query("SELECT * FROM images_miniature " +
+            "ORDER BY file_id DESC " +
+            "LIMIT 1")
+    ImageMiniature getLast();
 
     @Query("DELETE FROM images_miniature ")
     void deleteAll();

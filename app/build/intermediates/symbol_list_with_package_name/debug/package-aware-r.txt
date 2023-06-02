@@ -2542,6 +2542,7 @@ drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
 drawable download
+drawable download_error
 drawable download_icon
 drawable gradient_basic
 drawable header

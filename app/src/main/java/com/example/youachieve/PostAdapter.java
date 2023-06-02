@@ -65,27 +65,36 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
         holder.postType.setText(typePost.toString());
         holder.postType.setTextColor(TypePost.getIdResColor(typePost));
 
+        holder.postLikeCount.setText(String.valueOf(postData.post.likesCount));
+        holder.postCommentCount.setText(String.valueOf(postData.post.commentsCount));
+        holder.postViewCount.setText(String.valueOf(postData.post.viewsCount));
+
         if (postData.post.text.length() > MyConfig.POSTS_TEXT_SIZE_MAX)
             holder.postText.setText(postData.post.text.substring(0, MyConfig.POSTS_TEXT_SIZE_MAX).concat(" ..."));
         else
             holder.postText.setText(postData.post.text);
 
-        holder.postLikeCount.setText(String.valueOf(postData.post.likesCount));
-        holder.postCommentCount.setText(String.valueOf(postData.post.commentsCount));
-        holder.postViewCount.setText(String.valueOf(postData.post.viewsCount));
-
         // Вначале установим фотографию загрузки, чтобы пользователь понял, что пост загружается
         // Когда реальное фото заргузится, фото загрузки сменится на реальное
         if (postData.files.size() > 0) {
+            holder.postImage.setVisibility(View.VISIBLE);
             holder.postImage.setImageResource(R.drawable.download);
             // Пока что пусть будет показываться только одно изображение, адже если их больше
-            new LoadImage(postData.files.get(0).url, holder.postImage).execute();
+            String url = postData.files.get(0).url;
+            String name = postData.files.get(0).name;
+            new LoadImage(url, name, holder.postImage, MyData.appContext).execute();
+        }
+        else {
+            holder.postImage.setVisibility(View.GONE);
         }
 
         // Изображение пользователя
         if (postData.userOwnerImage != null) {
             holder.postUserAvatar.setImageResource(R.drawable.download_icon);
-            new LoadImage(postData.userOwnerImage.url, holder.postUserAvatar).execute();
+
+            String url = postData.userOwnerImage.url;
+            String name = postData.userOwnerImage.name;
+            new LoadImage(url, name, holder.postUserAvatar, MyData.appContext).execute();
         }
         else {
             holder.postUserAvatar.setImageResource(R.drawable.user_avatar_none);
@@ -106,10 +115,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
                     Intent intent = new Intent(context, PostDetailActivity.class);
                     intent.putExtra("postId", postData.post.id);
                     context.startActivity(intent);
-
-//                    PostDetailFragment newFragment=new PostDetailFragment(post);
-//                    transaction.replace(R.id.contentFragment, newFragment);
-//                    transaction.commit();
                 }
                 else if (event.getAction() == MotionEvent.ACTION_CANCEL) {
                     holder.itemView.setBackgroundResource(R.drawable.post_background);
@@ -150,18 +155,12 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostViewHolder
 
     public void updatePosts() {
         isLoading_ = true;
-        //DataBase.postList.add(new Post(new User("", ""), "", new Date(), TypePost.NONE));
-        //notifyItemInserted(DataBase.postList.size() - 1);
-
         Handler handler = new Handler();
+
         handler.postDelayed(new Runnable() {
             @SuppressLint("NotifyDataSetChanged")
             @Override
             public void run() {
-                //DataBase.postList.remove(DataBase.postList.size() - 1);
-                //int scrollPosition = DataBase.postList.size();
-                //notifyItemRemoved(scrollPosition);
-
                 notifyDataSetChanged();
                 isLoading_ = false;
             }

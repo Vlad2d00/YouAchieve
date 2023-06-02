@@ -23,11 +23,17 @@ public interface FileDao {
     File getById(int id);
 
     @Query("SELECT * FROM files " +
+            "ORDER BY id DESC " +
+            "LIMIT 1")
+    File getLast();
+
+    @Query("SELECT * FROM files " +
             "WHERE attachment_id = :attachmentId ")
     List<File> filterByAttachmentId(int attachmentId);
 
     @Query("SELECT * FROM files, posts " +
-            "WHERE files.attachment_id = posts.attachment_id ")
+            "WHERE files.attachment_id = posts.attachment_id " +
+            "AND files.attachment_id > 0 ")
     List<File> filterByPosts();
 
     @Query("DELETE FROM files ")

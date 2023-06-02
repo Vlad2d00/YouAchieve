@@ -9,6 +9,7 @@
         android:targetSdkVersion="32" />
 
     <uses-permission android:name="android.permission." />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -23,7 +24,8 @@
         android:roundIcon="@drawable/logo"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.YouAchieve" >
+        android:theme="@style/Theme.YouAchieve"
+        android:usesCleartextTraffic="true" >
         <activity
             android:name="com.example.youachieve.activity.PostDetailActivity"
             android:exported="false" />

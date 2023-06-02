@@ -116,10 +116,6 @@
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.youachieve.app-merged_res-43:/layout_list_item_post_detail.xml.flat",
-        "source": "com.example.youachieve.app-main-45:/layout/list_item_post_detail.xml"
-    },
-    {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_settings.png.flat",
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\settings.png"
     },
@@ -224,6 +220,10 @@
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\avatar_mukola.jpg"
     },
     {
+        "merged": "com.example.youachieve.app-merged_res-43:/drawable-v24_download_error.png.flat",
+        "source": "com.example.youachieve.app-main-45:/drawable-v24/download_error.png"
+    },
+    {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_comment.png.flat",
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\comment.png"
     },
@@ -242,6 +242,10 @@
     {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_navigation.xml.flat",
         "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable\\navigation.xml"
+    },
+    {
+        "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable-v24_download_error.png.flat",
+        "source": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-main-45:\\drawable-v24\\download_error.png"
     },
     {
         "merged": "C:\\Users\\vlad2\\.gradle\\daemon\\7.3.3\\com.example.youachieve.app-merged_res-43:\\drawable_image_4.jpg.flat",
